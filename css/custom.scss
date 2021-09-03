@@ -1,0 +1,75 @@
+.reveal pre {
+	width: 100% !important;
+	box-sizing: border-box;
+}
+
+.reveal .code-wrapper {
+	padding: 1em;
+	box-shadow: none;
+	border: solid rgba(255, 255, 255, 0.25) 2px;
+	border-radius: 12px;
+}
+
+.reveal .highlight-line {
+	background: rgba(255,255,125,0.05);
+}
+
+.reveal .hljs-ln {
+	width: 100%;
+}
+
+.reveal .hljs:not(:first-child).fragment {
+	top: 1em;
+	bottom: 1em;
+	right: 1em;
+	left: 1em;
+
+	width: unset;
+	max-width: calc(100% - 2em);
+	min-height: 0;
+	max-height: calc(100% - 2em);
+}
+
+.reveal .page-border {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 25%;
+	border: solid rgba(255, 255, 255, 0.5) 2px;
+	padding: 0.5rem;
+	height: 100%;
+	background-color:rgba(255, 255, 255, 0.05);
+}
+
+.reveal .page-border.page-border-wide {
+	max-width: 50%;
+}
+
+.reveal .wireframe {
+	box-sizing: border-box;
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	height: 100%;
+	grid-gap: 1em;
+	font-size: 1rem;
+}
+
+.reveal .wireframe.text-normal {
+	font-size: inherit;
+}
+
+.reveal .wireframe-panel,
+.reveal .wireframe-text {
+	box-sizing: border-box;
+	grid-column: span 12;
+}
+
+.reveal .wireframe-panel {
+	background-color:rgba(255, 255, 255, 0.05);
+	border: solid rgba(255, 255, 255, 0.5) 2px;
+	padding: 0.5rem;
+}
+
+.reveal .column {
+	grid-column: span 6 !important;
+}
